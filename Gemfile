@@ -36,25 +36,10 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
-gem 'aasm', '~> 5.0', '>= 5.0.5'
-gem 'activeadmin', '~> 2.1'
-gem 'cancancan', '~> 3.0', '>= 3.0.1'
-gem 'carrierwave', '~> 1.3', '>= 1.3.1'
-gem 'devise', '~> 4.6', '>= 4.6.2'
-gem 'draper', '~> 3.1'
-gem 'ffaker', '~> 2.12'
-gem 'haml', '~> 5.1', '>= 5.1.1'
-gem 'haml-rails', '~> 2.0', '>= 2.0.1'
-gem 'kaminari', '~> 1.1', '>= 1.1.1'
-gem 'mini_magick'
-gem 'omniauth', '~> 1.9'
-gem 'omniauth-facebook', '~> 5.0'
-gem 'sass', '~> 3.7', '>= 3.7.4'
-
-
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'ffaker', '~> 2.12'
   gem 'pry', '~> 0.12.2'
   gem 'rubocop', '~> 0.74.0'
   gem 'rubocop-rspec', '~> 1.35'
@@ -84,3 +69,21 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+
+
+gem 'aasm', '~> 5.0', '>= 5.0.5'
+gem 'activeadmin', '~> 2.1'
+gem "bootstrap-sass", "~> 3.4"
+gem 'cancancan', '~> 3.0', '>= 3.0.1'
+gem 'carrierwave', '~> 1.3', '>= 1.3.1'
+gem 'devise', '~> 4.6', '>= 4.6.2'
+gem 'draper', '~> 3.1'
+gem "font-awesome-rails", "~> 4.7"
+gem 'haml', '~> 5.1', '>= 5.1.1'
+gem 'haml-rails', '~> 2.0', '>= 2.0.1'
+gem "jquery-rails", "~> 4.3"
+gem 'kaminari', '~> 1.1', '>= 1.1.1'
+gem 'mini_magick'
+gem 'omniauth', '~> 1.9'
+gem 'omniauth-facebook', '~> 5.0'
+gem 'sass', '~> 3.7', '>= 3.7.4'
