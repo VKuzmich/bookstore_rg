@@ -1,6 +1,8 @@
 class Book < ApplicationRecord
   belongs_to :categories
-  has_and_belongs_to_many :authors
+
+  has_many :authors_books, dependent: :destroy
+  has_many :authors, through: :authors_books
 
   validates :title, :description, :price, :year, :quantity, presence: true
 
