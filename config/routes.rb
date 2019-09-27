@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  root 'home#index'
+  root 'books#index'
+
+  resources :books, only: %i[index show]
 end
