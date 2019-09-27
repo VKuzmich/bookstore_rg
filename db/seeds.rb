@@ -25,8 +25,8 @@ LIMIT.times do
     book.quantity = rand(1..10)
     book.dimensions = "h: #{rand(BOOK_DIMENSIONS_RANGE).round(1)} w: #{rand(BOOK_DIMENSIONS_RANGE).round(1)} d: #{rand(BOOK_DIMENSIONS_RANGE).round(1)}"
     book.year = rand(1800..2020)
-    book.materials    = MATERIALS.sample(rand(1..3))
-    book.categories   = Category.all.sample
+    book.materials    = MATERIALS.sample(rand(1..3)).join(', ')
+    book.categories   = Category.all.sample(rand(1..2))
     book.authors = Author.all.sample(rand(1..3))
   end
 end
