@@ -1,10 +1,12 @@
 class BooksController < ApplicationController
   def index
-    # @books = Book.all
+    @categories = Category.all
+
+    @books = Book.first(5)
   end
 
   def show
-    # @book = Book.find.(params[:id])
+    @book = Book.find_by(id: params[:id])
   end
 
   # private
