@@ -61,6 +61,7 @@ gem 'sass', '~> 3.7', '>= 3.7.4'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'factory_bot_rails', '~> 5.0'
   gem 'pry', '~> 0.12.2'
   gem 'rubocop', '~> 0.74.0'
   gem 'rubocop-rspec', '~> 1.35'
