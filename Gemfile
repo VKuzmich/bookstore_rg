@@ -64,6 +64,9 @@ group :development, :test do
   gem 'pry', '~> 0.12.2'
   gem 'rubocop', '~> 0.74.0'
   gem 'rubocop-rspec', '~> 1.35'
+  gem 'rspec', ' 3.8.0'
+  gem 'rspec-core'
+  gem 'rspec-rails', '~> 3.8'
 end
 
 group :development do
@@ -78,7 +81,6 @@ end
 
 group :test do
   gem 'database_cleaner'
-  gem 'rspec', '~> 3.8'
   gem 'shoulda-matchers'
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
