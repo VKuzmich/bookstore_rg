@@ -83,6 +83,9 @@ end
 group :test do
   gem 'database_cleaner'
   gem 'shoulda-matchers'
+  gem 'rspec', ' 3.8.0'
+  gem 'rspec-core'
+  gem 'rspec-rails', '~> 3.8'
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
