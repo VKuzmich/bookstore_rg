@@ -51,6 +51,7 @@ gem 'haml', '~> 5.1', '>= 5.1.1'
 gem 'haml-rails', '~> 2.0', '>= 2.0.1'
 gem "jquery-rails", "~> 4.3"
 gem 'kaminari', '~> 1.1', '>= 1.1.1'
+gem 'image_processing', '~> 1.9'
 gem 'mini_magick'
 gem 'omniauth', '~> 1.9'
 gem 'omniauth-facebook', '~> 5.0'
