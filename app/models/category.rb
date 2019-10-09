@@ -1,5 +1,7 @@
 class Category < ApplicationRecord
-  has_many :books
+  TITLE_LENGTH = 60
 
-  validates :title, presence: true
+  has_many :books, dependent: :destroy
+
+  validates :title, presence: true, length: { maximum: TITLE_LENGTH }, uniqueness: true
 end

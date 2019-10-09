@@ -705,6 +705,21 @@
         1,
         null
       ],
+      "/Users/vladimirkuzmich/bookstore_rg/app/models/author.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/vladimirkuzmich/bookstore_rg/app/models/authors_book.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
       "/Users/vladimirkuzmich/bookstore_rg/app/models/book.rb": [
         1,
         1,
@@ -734,29 +749,18 @@
         1,
         null
       ],
+      "/Users/vladimirkuzmich/bookstore_rg/app/models/books_material.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
       "/Users/vladimirkuzmich/bookstore_rg/app/models/category.rb": [
         1,
         1,
         null,
         1,
-        null
-      ],
-      "/Users/vladimirkuzmich/bookstore_rg/app/models/authors_book.rb": [
-        1,
-        1,
-        1,
-        null
-      ],
-      "/Users/vladimirkuzmich/bookstore_rg/app/models/author.rb": [
-        1,
-        1,
-        1,
-        1,
-        null
-      ],
-      "/Users/vladimirkuzmich/bookstore_rg/app/models/books_material.rb": [
-        1,
-        1,
+        null,
         1,
         null
       ],
@@ -767,6 +771,6 @@
         null
       ]
     },
-    "timestamp": 1570566651
+    "timestamp": 1570603418
   }
 }
