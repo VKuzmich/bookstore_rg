@@ -37,7 +37,6 @@ gem 'jbuilder', '~> 2.5'
 #
 
 gem 'bootsnap', '>= 1.1.0', require: false
-
 gem 'aasm', '~> 5.0', '>= 5.0.5'
 gem 'activeadmin', '~> 2.1'
 gem "bootstrap-sass", "~> 3.4"
@@ -57,7 +56,7 @@ gem 'omniauth', '~> 1.9'
 gem 'omniauth-facebook', '~> 5.0'
 gem 'pagy', '~> 3.5'
 gem 'sass', '~> 3.7', '>= 3.7.4'
-
+gem 'omniauth-facebook', '~> 5.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -84,9 +83,6 @@ end
 group :test do
   gem 'database_cleaner'
   gem 'shoulda-matchers'
-  gem 'rspec', ' 3.8.0'
-  gem 'rspec-core'
-  gem 'rspec-rails', '~> 3.8'
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'

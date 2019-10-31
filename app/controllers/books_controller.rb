@@ -1,4 +1,5 @@
 class BooksController < ApplicationController
+  # before_action :authenticate_user!
   def index
     @latest_books = Book.latest_books
     @best_sellers = Book.best_sellers
