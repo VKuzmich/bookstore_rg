@@ -1,10 +1,11 @@
+# frozen_string_literal: true
+
 class Book < ApplicationRecord
   MIN_PRICE = 1
   MAX_PRICE = 150
 
   MIN_QUANTITY = 0
   MAX_QUANTITY = 10
-
 
   belongs_to :category
 
@@ -17,7 +18,8 @@ class Book < ApplicationRecord
   validates :title, :description, :year, :quantity, presence: true
   validates :category_id, presence: true
   validates :price, presence: true,
-            numericality: { greater_than_or_equal_to: MIN_PRICE, less_than_or_equal_to: MAX_PRICE }
+                    numericality: { greater_than_or_equal_to: MIN_PRICE,
+                                    less_than_or_equal_to: MAX_PRICE }
   validates :quantity, numericality: { only_integer: true,
                                        greater_than_or_equal_to: MIN_QUANTITY,
                                        less_than_or_equal_to: MAX_QUANTITY }

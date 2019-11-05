@@ -21,19 +21,27 @@ Metrics/BlockLength:
   Exclude:
     - 'Gemfile'
     - 'spec/**/*.rb'
+  Max: 70
+
+Metrics/MethodLength:
+  Max: 15
 
 Metrics/ModuleLength:
   Exclude:
     - 'spec/**/*.rb'
 
 Metrics/LineLength:
-  Max: 120
+  Max: 160
+
+Style/NumericLiterals:
+  Enabled: false
 
 Documentation:
   Enabled: false
 
 AllCops:
   Exclude:
-    - 'bin/'
+    - bin/*
     - '*.gemspec'
+    - vendor/bundle/**/*
   TargetRubyVersion: 2.6.3

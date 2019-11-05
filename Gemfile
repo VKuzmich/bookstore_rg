@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -35,10 +37,9 @@ gem 'jbuilder', '~> 2.5'
 
 # Reduces boot times through caching; required in config/boot.rb
 #
-
-gem 'bootsnap', '>= 1.1.0', require: false
 gem 'aasm', '~> 5.0', '>= 5.0.5'
 gem 'activeadmin', '~> 2.1'
+gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bootstrap-sass', '~> 3.4'
 gem 'cancancan', '~> 3.0', '>= 3.0.1'
 gem 'carrierwave', '~> 1.3', '>= 1.3.1'
@@ -48,9 +49,9 @@ gem 'ffaker', '~> 2.12'
 gem 'font-awesome-rails', '~> 4.7'
 gem 'haml', '~> 5.1', '>= 5.1.1'
 gem 'haml-rails', '~> 2.0', '>= 2.0.1'
+gem 'image_processing', '~> 1.9'
 gem 'jquery-rails', '~> 4.3'
 gem 'kaminari', '~> 1.1', '>= 1.1.1'
-gem 'image_processing', '~> 1.9'
 gem 'mini_magick'
 gem 'omniauth', '~> 1.9'
 gem 'omniauth-facebook', '~> 5.0'
@@ -62,8 +63,6 @@ group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot_rails', '~> 5.0'
   gem 'pry', '~> 0.12.2'
-  gem 'rubocop', '~> 0.74.0'
-  gem 'rubocop-rspec', '~> 1.35'
   gem 'rspec', ' 3.8.0'
   gem 'rspec-core'
   gem 'rspec-rails', '~> 3.8'
@@ -72,9 +71,14 @@ end
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'fasterer', '~> 0.6.0'
-  gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
+  gem 'web-console', '>= 3.3.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'rubocop', '~> 0.76.0'
+  gem 'rubocop-i18n', '~> 2.0'
+  gem 'rubocop-performance', '~> 1.4'
+  gem 'rubocop-rails', '~> 2.2'
+  gem 'rubocop-rspec', '~> 1.35'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end

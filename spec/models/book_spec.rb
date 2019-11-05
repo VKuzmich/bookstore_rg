@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe Book, type: :model do
-  context 'relationships' do
+  context 'with relationships' do
     it { is_expected.to belong_to(:category) }
 
     it { is_expected.to have_many(:authors_books).dependent(:destroy) }
@@ -11,7 +13,7 @@ RSpec.describe Book, type: :model do
     it { is_expected.to have_many(:materials).through(:books_materials) }
   end
 
-  context 'validations' do
+  context 'when validates' do
     it { is_expected.to validate_presence_of(:title) }
     it { is_expected.to validate_presence_of(:description) }
     it { is_expected.to validate_presence_of(:price) }

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 BOOK_DIMENSIONS_RANGE = (1.0..10.0).freeze
 MATERIALS = ['glossy paper', 'hardcover', 'soft paper', 'cardboard'].freeze
 

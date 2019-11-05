@@ -1,12 +1,14 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe Author, type: :model do
-  context 'relations' do
+  context 'with relationships' do
     it { is_expected.to have_many(:authors_books).dependent(:destroy) }
     it { is_expected.to have_many(:books).through(:authors_books) }
   end
 
-  context 'validations' do
+  context 'when validates' do
     it { is_expected.to validate_presence_of(:first_name) }
     it { is_expected.to validate_presence_of(:last_name) }
 
