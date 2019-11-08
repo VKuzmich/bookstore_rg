@@ -1,0 +1,13 @@
+current directory: /Users/vladimirkuzmich/bookstore_rg/vendor/bundle/ruby/2.6.0/gems/json-2.2.0/ext/json
+/Users/vladimirkuzmich/.rbenv/versions/2.6.3/bin/ruby -I /Users/vladimirkuzmich/.rbenv/versions/2.6.3/lib/ruby/2.6.0 -r ./siteconf20190912-90079-1kbvice.rb extconf.rb
+creating Makefile
+
+current directory: /Users/vladimirkuzmich/bookstore_rg/vendor/bundle/ruby/2.6.0/gems/json-2.2.0/ext/json
+make "DESTDIR=" clean
+
+current directory: /Users/vladimirkuzmich/bookstore_rg/vendor/bundle/ruby/2.6.0/gems/json-2.2.0/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /Users/vladimirkuzmich/bookstore_rg/vendor/bundle/ruby/2.6.0/gems/json-2.2.0/ext/json
+make "DESTDIR=" install

@@ -63,9 +63,9 @@ group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot_rails', '~> 5.0'
   gem 'pry', '~> 0.12.2'
-  gem 'rspec', ' 3.8.0'
+  gem 'rspec'
   gem 'rspec-core'
-  gem 'rspec-rails', '~> 3.8'
+  gem 'rspec-rails'
 end
 
 group :development do
@@ -89,7 +89,7 @@ group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
-  gem 'simplecov', '~> 0.16.1'
+  gem 'simplecov', '~> 0.17.1'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
 end

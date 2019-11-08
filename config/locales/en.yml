@@ -37,3 +37,11 @@ en:
 
   book:
       back_to_results: "Back to results"
+
+  button:
+    buy_now: "Buy Now"
+
+  Previous: 'Previous'
+  Next: 'Next'
+
+  get_started: 'Get Started'
