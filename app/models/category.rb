@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Category < ApplicationRecord
-  TITLE_LENGTH = 60
+  TITLE_LENGTH = 50
 
   has_many :books, dependent: :destroy
 

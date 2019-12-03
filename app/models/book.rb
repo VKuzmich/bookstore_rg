@@ -15,6 +15,8 @@ class Book < ApplicationRecord
   has_many :books_materials, dependent: :destroy
   has_many :materials, through: :books_materials
 
+  has_many :images, dependent: :destroy
+
   validates :title, :description, :year, :quantity, presence: true
   validates :category_id, presence: true
   validates :price, presence: true,

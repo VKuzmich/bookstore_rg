@@ -45,3 +45,12 @@ en:
   Next: 'Next'
 
   get_started: 'Get Started'
+
+  currency:
+    euro: '€'
+
+  description: 'Description'
+
+  descriptions:
+    read_more: "Read more..."
+    read_less: "Read less..."

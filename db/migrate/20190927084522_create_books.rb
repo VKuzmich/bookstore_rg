@@ -9,8 +9,8 @@ class CreateBooks < ActiveRecord::Migration[5.2]
       t.integer :quantity
       t.string  :dimensions
       t.integer :year
-      t.string  :materials
-      t.string  :image
+      t.text  :materials, Array
+      t.string  :images
       t.references :category
 
       t.timestamps

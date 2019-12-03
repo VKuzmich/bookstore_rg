@@ -42,7 +42,7 @@ gem 'activeadmin', '~> 2.1'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bootstrap-sass', '~> 3.4'
 gem 'cancancan', '~> 3.0', '>= 3.0.1'
-gem 'carrierwave', '~> 1.3', '>= 1.3.1'
+gem 'carrierwave', '~> 2.0'
 gem 'devise', '~> 4.6', '>= 4.6.2'
 gem 'draper', '~> 3.1'
 gem 'ffaker', '~> 2.12'

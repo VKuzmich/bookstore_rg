@@ -43,5 +43,18 @@ AllCops:
   Exclude:
     - bin/*
     - '*.gemspec'
-    - vendor/bundle/**/*
+    - vendor/**/**/*
+
   TargetRubyVersion: 2.6.3
+
+Style/Documentation:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/GuardClause:
+  Enabled: false
+
+Style/IfUnlessModifier:
+  Enabled: false
