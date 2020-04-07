@@ -1,0 +1,33 @@
+%main.container
+  #slider.carousel.slide{'data-ride': "carousel"}
+    %ol.carousel-indicators
+      - @latest_books.each_index do |index|
+        - if index.zero?
+          %li.active{'data-target': "#slider", 'data-slide-to': "#{index}"}
+        - else
+          %li{'data-target': "#slider", 'data-slide-to': "#{index}"}
+    .carousel-inner{role: "listbox"}
+      - @latest_books.each_with_index do |latest_books, index|
+        - if index.zero?
+          .item.active
+            = render :partial => 'books/latest_books', locals: {latest_books: latest_books}
+        - else
+          .item
+            = render :partial => 'books/latest_books', locals: {latest_books: latest_books}
+    %a.left.carousel-control{href: "#slider", role: "button", 'data-slide': "prev"}
+      %span.icon-prev{'aria-hidden': "true"}
+      %span.sr-only= translate('Previous')
+    %a.right.carousel-control{href: "#slider", role: "button", 'data-slide': "next"}
+      %span.icon-next{'aria-hidden': "true"}
+      %span.sr-only= translate('Next')
+.container
+  .jumbotron.text-center.mb-0
+    %h2.h1= translate('store.greetings')
+    .mb-res-50
+      %p= translate('store.description')
+    %button.btn.btn-default= translate('get_started')
+  .mb-35
+    %h3= translate('store.bestsellers')
+    .row
+      - @best_sellers.each do |best_sellers|
+        = render :partial => 'books/best_seller', locals: {best_sellers: best_sellers}

@@ -1,0 +1,60 @@
+require:
+  - rubocop-rspec
+  - rubocop-performance
+
+RSpec/MessageChain:
+  Enabled: false
+
+RSpec/NestedGroups:
+  Max: 6
+
+RSpec/MultipleExpectations:
+  Max: 5
+
+RSpec/ExampleLength:
+  Max: 10
+
+RSpec/MessageSpies:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - 'Gemfile'
+    - 'spec/**/*.rb'
+  Max: 70
+
+Metrics/MethodLength:
+  Max: 15
+
+Metrics/ModuleLength:
+  Exclude:
+    - 'spec/**/*.rb'
+
+Metrics/LineLength:
+  Max: 160
+
+Style/NumericLiterals:
+  Enabled: false
+
+Documentation:
+  Enabled: false
+
+AllCops:
+  Exclude:
+    - bin/*
+    - '*.gemspec'
+    - vendor/**/**/*
+
+  TargetRubyVersion: 2.6.3
+
+Style/Documentation:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/GuardClause:
+  Enabled: false
+
+Style/IfUnlessModifier:
+  Enabled: false
